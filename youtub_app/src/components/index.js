@@ -1,0 +1,8 @@
+export {default as Navbar} from './Navbar.jsx'
+export {default as VideoDetail} from './VideoDetail'
+export {default as Feed} from './Feed'
+export {default as SearchFeed} from './SearchFeed'
+export {default as ChannelDetail} from './ChannelDetail'
+export {default as SearchBar} from './SarchBar'
+export {default as Sidebar} from './Sidebar'
+export {default as Videos} from  './Video'
