@@ -8,8 +8,12 @@ const ChannelCard = ({channeLdetail}) => (
     <Box sx={{
       boxShadow:'none',
       borderRadius:'20px',
-
-
+      display:'flex',
+      justifyContent:'center',
+      alignItem:'center',
+      width:{xs:'356px',md:'320px'},
+      height:'326px',
+      margin:'auto'
     }}> 
 
     <Link to ={`/channel/${channeLdetail?.id?.channelId}`}>
@@ -18,7 +22,7 @@ const ChannelCard = ({channeLdetail}) => (
       ,justifyContent:'center',
       flexDirection:'column',
       textAlign:'center',
-      color:'#fff'
+      color:'#fff',
       }}>
 
       <CardMedia
@@ -32,6 +36,10 @@ const ChannelCard = ({channeLdetail}) => (
        <CheckCircle sx={{ fontSize: 15, color: 'gray', ml: '5px' }} />
 
       </Typography>
+
+      <Typography>
+        {parseInt(channeLdetail?.statistics?.subscriberCount).toLocaleString() } Subcriber
+      </Typography> 
 
     </CardContent>
     </Link>

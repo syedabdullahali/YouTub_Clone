@@ -7,6 +7,7 @@ const Video = ({videos}) => {
     direction='row'
     flexWrap='wrap'
     justifyContent='start'
+    alignContent='center'
     gap={2}
     >
       {videos.map((item,index)=>(

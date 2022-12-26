@@ -15,7 +15,7 @@ const VideoCrad = ({ video: { id: videoId, snippet } }) => {
 
             <Link to={videoId ? `/video/${ videoId }` : demoVideoUrl} />
             <CardMedia image={snippet?.thumbnails?.high?.url}
-                alt={snippet?.title} sx={{ width: 358, height: 180 }} />
+                alt={snippet?.title} sx={{ width: {md:'320px',xs:'100%'}, height: 180, }} />
 
             <Link />
 
