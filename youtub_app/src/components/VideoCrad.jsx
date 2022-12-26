@@ -8,7 +8,6 @@ const VideoCrad = ({video:{id:videoId,snippet}}) => {
     console.log(videoId,snippet)
   return (
     <Card>
-     <Link to={videoId?`/video/${videoId}`:demoVideoUrl}/> 
 
      <CardMedia image={snippet?.thumbnails?.high?.url}
      alt={snippet?.title} sx={{width:358,height:180}}/>
@@ -17,6 +16,12 @@ const VideoCrad = ({video:{id:videoId,snippet}}) => {
         backgroundColor:'#1e1e1e',
         height:'106px'
         }}/>
+
+      <Link to={videoId?`/video/${videoId}`:demoVideoUrl}/>
+      <Typography>
+        {snippet?.title.slice(0,60)}
+      </Typography>
+      <Link/> 
 
 
     </Card>
