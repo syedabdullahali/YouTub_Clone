@@ -8,12 +8,13 @@ const Video = ({videos}) => {
     flexWrap='wrap'
     justifyContent='start'
     alignContent='center'
+    margin='auto'
     gap={2}
     >
       {videos.map((item,index)=>(
        <Box key={index}>
             {item.id.videoId &&<VideoCard video={item}/>}  
-            {item.id.channelId &&<ChannelCard channeLdetail={item}/>}     
+            {item.id.channelId &&<ChannelCard channeLdetail={item} marginTop='0px'/>}     
          </Box>
       ))}
     </Stack>
