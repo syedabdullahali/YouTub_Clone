@@ -6,7 +6,7 @@ import { Search } from '@mui/icons-material'
 
 import React from 'react'
 
-const SarchBar = () => {
+const SearchBar = () => {
 
   const [searchTerm,setSearchTerm] =useState('')
   const navigate = useNavigate()
@@ -53,4 +53,4 @@ const SarchBar = () => {
   )
 }
 
-export default SarchBar
+export default SearchBar

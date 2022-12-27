@@ -1,7 +1,7 @@
 import {Stack} from '@mui/material'
 import {Link} from 'react-router-dom'
 import {logo} from '../utils/constants'
-import SarchBar  from './SarchBar'
+import SarchBar  from './SearchBar'
 
 const Navbar = () => (
     <Stack direction='row' alignItems='center' p={2} 
