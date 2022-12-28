@@ -12,7 +12,6 @@ const VideoDetail = () => {
 
   const {id} =useParams()
   
-  console.log(videoDetail)
 
   useEffect(()=>{
     fetchFromAPI(`videos?part=snippet,statistics&id=${id}`)

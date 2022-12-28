@@ -1,7 +1,6 @@
 import React from 'react'
 import {BrowserRouter,Route,Routes}  from "react-router-dom"
 import { Box } from '@mui/system'
-// here box is nthing more instead of simple div element 
 
 import { Navbar,Feed,VideoDetail,ChannelDetail,SearchFeed} from './components'
 
