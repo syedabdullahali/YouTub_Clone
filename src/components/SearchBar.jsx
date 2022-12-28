@@ -6,11 +6,25 @@ import { Search } from '@mui/icons-material'
 
 import React from 'react'
 
-const SarchBar = () => {
+const SearchBar = () => {
+
+  const [searchTerm,setSearchTerm] =useState('')
+  const navigate = useNavigate()
+
+  const sumbitHandler =(e)=>{
+    e.preventDefault();      
+    if(searchTerm){
+      console.log(searchTerm)
+      navigate(`/search/${searchTerm}`)
+    }
+
+  }
+
+
   return (
     <Paper 
     component='form'
-    onSubmit={()=>{}}
+    onSubmit={sumbitHandler}
     sx={{
         borderRadius:20,
         border:'1px solid #e3e3e3',
@@ -22,8 +36,8 @@ const SarchBar = () => {
      <input
        className='search-bar'
        placeholder='Search...'
-       value=''
-       onChange={()=>{}}
+       value={searchTerm}
+       onChange={(e)=>setSearchTerm(e.target.value)}
        style={{border:'none',outline:'none',width:'20rem'}}
      />
      <IconButton
@@ -39,4 +53,4 @@ const SarchBar = () => {
   )
 }
 
-export default SarchBar
+export default SearchBar
