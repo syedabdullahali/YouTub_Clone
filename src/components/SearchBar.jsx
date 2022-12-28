@@ -38,7 +38,7 @@ const SearchBar = () => {
        placeholder='Search...'
        value={searchTerm}
        onChange={(e)=>setSearchTerm(e.target.value)}
-       style={{border:'none',outline:'none',width:'20rem'}}
+       style={{border:'none',outline:'none',maxWidth:'20rem'}}
      />
      <IconButton
       type='submit' 
