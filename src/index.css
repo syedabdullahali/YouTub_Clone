@@ -62,6 +62,9 @@ a {
   border-radius: 20px;
   transition: all 0.3s ease;
 }
+.react-player {
+  max-height: 70vh !important;
+}
 
 @media screen and (max-width: 900px) {
   .category-btn{
@@ -81,7 +84,7 @@ a {
   }
 
   .react-player {
-    height: 45vh !important;
+    height: 40vh !important;
   }
   .search-bar{
     width:200px;
