@@ -2,7 +2,8 @@ import { Box,Stack } from '@mui/material'
 import { VideoCard,ChannelCard } from './'
 const Video = ({videos,direction}) => {
   console.log(videos)
-  if(!videos)return 'Loding....'
+  if(!videos[0])return 'Loding....'
+
   return (
     <Stack 
     direction={direction||'row'}
